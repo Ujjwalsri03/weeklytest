@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #efe9e9;
+}
+
+.navbar {
+  display: flex;
+  top: 0;
+  position: fixed;
+  height: 90px;
+  width: 100%;
+  background-color: #343131;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+  padding: 0 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h2 {
+  color: #fff;
+  font-size: x-large;
+}
+
+.links {
+  display: flex;
+  margin-left: 100px;
+}
+
+.links ul {
+  display: flex;
+  font-size: 22px;
+}
+
+.links ul li {
+  list-style-type: none;
+  margin: 0 28px;
+}
+
+.links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.links ul li a:hover {
+  color: #b8b4b4;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 0;
+}
+
+.homearea {
+  height: calc(100vh);
+  width: 100%;
+  position: relative;
+  background: url(https://koa.com/blog/images/family-camping-at-sunset.jpg?preset=heroimagecropped);
+  background-position: center 65%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.homearea::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85%;
+  z-index: 3;
+}
+
+.content .text h1 {
+  font-size: 62px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: azure;
+}
+
+.content .text p {
+  text-align: center;
+  font-size: 23px;
+  color: rgb(255, 255, 255);
+}
+
+.content button {
+  border: none;
+  margin: 45px;
+  padding: 13px 25px;
+  font-weight: 548;
+  border-radius: 10px;
+  border: 2px solid azure;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.content button a {
+  color: #040404;
+  text-decoration: none;
+}
+
+.content button:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+/* service section */
+
+.servicepage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin-bottom: 30px;
+  /* padding: 100px 20px;  */
+}
+
+.servicepage h2 {
+  font-size: 40px;
+  margin: 10px;
+}
+
+.servicepage p {
+  font-size: 25px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  margin: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 22%;
+  align-items: center;
+  background-color: #fff;
+  padding: 2% 1%;
+  margin: 28px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.servicepage .cards img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 5px;
+  font-size: 25px;
+}
+
+.card p {
+  font-size: 22px;
+  text-align: center;
+}
+
+/* About us section */
+
+.description {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.description h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.description p {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+.row {
+  text-align: justify;
+  margin: 0% 5%;
+  width: 75%;
+}
+
+.row h3 {
+  margin: 7px 0px;
+  font-size: 26px;
+}
+
+.team ul {
+  margin: 20px 35px;
+}
+.team li {
+  margin: 8px;
+  font-size: 25px;
+}
+
+/* contact-section */
+
+.contactpage {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.contactpage h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.contactpage p {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.contact{
+  display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   justify-content: center;
+   margin-top: 30px;
+}
+
+.visit{
+  width: 30%;
+  margin-top: 40px;
+}
+.details{
+  display: flex;
+  margin-top: 3px;
+}
+
+.details p{
+  font-size: 23px;
+}
+
+.details .material-symbols-outlined{
+  color: rgb(100, 104, 104);
+  margin-right: 10px;
+}
+
+.contactform{
+  margin-top: 20px ;
+  width: 40%;
+  margin-left: 10%;
+}
+
+.contactform input{
+  width: 85%;
+  height: 28px;
+  padding: 5px 5px;
+  margin-bottom: 25px;
+}
+
+.contactform textarea{
+  width: 85%;
+  padding: 5px 5px;
+  margin-bottom: 15px;
+}
+
+.contactform button{
+  width: 28%;
+  padding: 10px 5px;
+  margin-bottom: 15px;
+  float: left;
+  margin-left: 7%;
+  font-size: 20px;
+  background-color: #322f2f;
+  color: white;
+  border-radius: 7px;
+}
